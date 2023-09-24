@@ -4,15 +4,44 @@ This is a basic project using conditional statements
 """
 
 print("Welcome to Treasure Island.\nYour mission is to find the treasure.")
-
-direction = input("Left or Right? ").casefold()
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/______/_
+*******************************************************************************
+''')
+direction = input("Left or Right? ").capitalize()
 if direction == "Left":
-    # print("test")
-    action = input("Swim or Wait? ").casefold()
+    print("You make a left turn and come across a lagoon, do you:")
+    action = input("Swim or Wait? ").capitalize()
+    if action == "Wait":
+        print("Suddenly, 3 doors appear before you with three different colours. Do you want to go into the:")
+        door = input("Red, Blue or Yellow door? ").capitalize()
+        if door == "Yellow":
+            print("You Win!")
+        else:
+            print("Wrong Door. Game Over")
+    else:
+        print("You drowned. Game Over.")
 else:
     print("Game Over.")
 
 
-door = input("Red, Blue or Yellow? ").casefold()
 
 
