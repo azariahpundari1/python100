@@ -21,3 +21,4 @@ elif random_number == 1:
     else:
         print("You lose :(")
 
+#TODO create functions for concisness
