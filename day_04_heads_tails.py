@@ -20,9 +20,9 @@ def main():
         print(display_outcome(user_input, option))
 
 
-def display_outcome(choice, option):
+def display_outcome(user_choice, option):
     """Display the outcome if the player has won or lost"""
-    if choice == option:
+    if user_choice == option:
         return "You win!"
     else:
         return "You lose!"
