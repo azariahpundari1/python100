@@ -12,7 +12,7 @@ def main():
     if random_number == 0:
         print("Tails")
         if user_input == "Tails":
-            print("You win!")
+            print("You win!":
         else:
             print("You lose :(")
     elif random_number == 1:
@@ -22,7 +22,14 @@ def main():
         else:
             print("You lose :(")
 
+
 #TODO Create functions for concisness
+def display_outcome(choice, option):
+    """Display the outcome if the player has won or lost"""
+    if choice == option:
+        return "You win!"
+    else:
+        return "You lose!"
 
 
 if __name__ == "__main__":
