@@ -11,19 +11,15 @@ def main():
     random_number = random.randint(0,1)
     if random_number == 0:
         print("Tails")
-        if user_input == "Tails":
-            print("You win!":
-        else:
-            print("You lose :(")
+        option = "Tails"
+        print(display_outcome(user_input, option))
+        
     elif random_number == 1:
         print("Heads")
-        if user_input == "Heads":
-            print("You win!")
-        else:
-            print("You lose :(")
+        option = "Heads"
+        print(display_outcome(user_input, option))
 
 
-#TODO Create functions for concisness
 def display_outcome(choice, option):
     """Display the outcome if the player has won or lost"""
     if choice == option:
